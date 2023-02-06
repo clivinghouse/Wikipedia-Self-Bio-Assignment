@@ -10,18 +10,56 @@
         margin-bottom:5px;
 
     }
+
     .main-content{
+    /* width-min:300px; */
         display: flex;
         flex-direction: row;
         height: 100%;
     }
-    .sidebar{
-    margin: 20px;
+
+    .bio-card{
+        width: 20em;
+    float: right;
+        border: 1px grey solid;
+        background-color: #F8F9FA;
+
+    margin: 6px 0px 6px 12px;
+        padding: 3px;
 
     }
-    .section{
-
+    .bio-card img{
+    margin: 0px 10px;
+    width: auto;
     }
+    .card-title{
+   text-align:center;
+    }
+    .bio-card-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .img-caption{
+        text-align: center;
+        margin-top: 0px;
+        font-size: 10px;
+    }
+    .flex-row {
+        height: auto;
+       display: flex ;
+        flex-direction: row ;
+        width: 100%;
+        justify-content: center;
+    }
+    .flex-row p{
+        height: 100%;
+        margin: 0px 0px;
+        width: 50%;
+        text-align: left;
+    }
+    
+    
 </style>
 <body>
 <hr>
@@ -29,11 +67,31 @@
 <hr>
 <div class="main-content">
     <div class="bio-info">
-    bio
+        bio
     </div>
-    <div class="sidebar">
+    <div class="bio-card">
+        <div class="card-title">Corey Livinghouse</div>
+        <div class="bio-card-img">
+            <img src="./images/me.png" alt="">
+        </div>
+        <p class="img-caption">Picture of corey</p>
+        <div class="flex-row">
+            <p><b>Born</b></p>
+            <p>Pennsylvania</p>
+        </div>
+
+        <div class="flex-row">
+            <p><b>Alma Mater</b></p>
+            <p><a href="https://www.fleetwoodasd.k12.pa.us/">Fleetwood ASD</a><br>
+                <a href="https://racc.edu">RACC</a>
+            </p>
+        </div>
+
+        <div class="flex-row">
+            <p><b>Born</b></p>
+            <p>Pennsylvania</p>
+        </div>
         
-        <h2>Corey livinghouse</h2>
     </div>
 </div>
 </body>
